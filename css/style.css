@@ -1,0 +1,22 @@
+
+#list {
+  list-style-type: none;
+  height: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+#countdown {
+    padding-top: 50px;
+    font-size: 80px;
+    font-weight: 800;
+    
+}
+
+
+#result {
+    font-size: 20px;
+}

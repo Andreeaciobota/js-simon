@@ -44,3 +44,31 @@ const timer = setInterval(() => {
     countdown.innerText = --time
 }, 1000);
 
+// scomparsa  dei numeri dopo 30 secondi
+
+setTimeout(() => {
+    displayNumbers.className = 'd-none';
+    countdown.className = 'd-none';
+}, 30000);
+
+// prompt dopo 30 secondi dall'avvio della pagina
+let playerNumbers = [];
+setTimeout(() => {
+
+while(playerNumbers.length < totalNumbers) {
+    const playerNumber = getPlayerNumber(min, max);
+    if(!playerNumbers.includes(playerNumber)) playerNumbers.push(playerNumber)
+}
+
+// Conteggio dei punti 
+// Inserisco in un array i numeri che l'utente ha ricordato e gli comunico quali ha indovinato
+let correctAnswer = [];
+
+for(let i = 0; i < totalNumbers; i++) {
+    if(numbers.includes(playerNumbers[i])) correctAnswer.push(playerNumbers[i]);
+}
+
+alert(`Hai totalizzato ${correctAnswer.length}! I numeri che hai indovinato sono: ${correctAnswer}`)
+
+}, 30200);
+
